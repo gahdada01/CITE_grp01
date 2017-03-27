@@ -1,3 +1,11 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
 $main-color: #263856;
 $main-font-family: 'Roboto', sans-serif;
 $main-font: 17px;
@@ -19,7 +27,7 @@ $button-color: #38af38;
     padding: 8px 20px 7px 20px;
     margin-top: 20px;
     border-radius: 5px;
-    width: 98px;
+    width: 95px;
     cursor: pointer;
 }
 
@@ -335,7 +343,7 @@ a {
 
         #bc-left {
             display: inline-block;
-            width: 375px;
+            width: 360px;
             padding-bottom: 20px;
 
             p {
@@ -373,8 +381,9 @@ a {
                         @include p();
                         margin: 20px 0px 0px 0px;
                         background-color: $hf-color;
-                        width: 255px;
                         border-radius: 20px 0px 0px 20px;
+                        width: 95%;
+                        
                     }
                 }
 
@@ -394,8 +403,8 @@ a {
                         @include p();
                         margin: 20px 0px 0px 0px;
                         background-color: $hf-color;
-                        width: 255px;
                         border-radius: 20px 0px 0px 20px;
+                        width: 95%;
                     }
                 }
 
@@ -415,8 +424,8 @@ a {
                         @include p();
                         margin: 20px 0px 0px 0px;
                         background-color: $hf-color;
-                        width: 255px;
                         border-radius: 20px 0px 0px 20px;
+                        width: 95%;
                     }
                 }
             }
@@ -488,7 +497,11 @@ a {
 
 // @media Queries
 @media only screen and (max-width:320px)  { 
-    /* smartphones, iPhone, portrait 480x320 phones */ 
+    #main-con #top-con #top-con-button-text {
+        vertical-align: top;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width:481px)  { 
@@ -519,7 +532,7 @@ a {
     }
 }
 
-@media only screen and (max-width:687px) {
+@media only screen and (max-width:687px){
     #main-con #bottom-con #bc-left p {
         text-align: center;
         transition: .3s;
@@ -532,7 +545,7 @@ a {
     #header-body #hb-phone-button-text, #header-body #hb-phone-button-text #hb-button-text {
         top: initial !important; 
         position: initial;
-        margin-left: 5%;
+        padding-left: 10%;
     }
 
     #header-body #hb-phone-button-text {
@@ -572,7 +585,7 @@ a {
     }
 }
 
-@media (max-width:900px)  { 
+@media only screen and (max-width:900px)  { 
     #hf-wifi, #hf-connect, #hf-comment {
         width: 32%;
         transition: .3s;
@@ -584,7 +597,7 @@ a {
     }
 }
 
-@media only screen and (max-width:1100px) { 
+@media only screen and (max-width:1100px){ 
 
     #header-head-con #header-head {
         width: 100%;
@@ -612,3 +625,9 @@ a {
     }
 }
 
+// @media only screen and (max-height: 800px), only screen and (max-width: 1100px){
+//     #header-body #hb-phone-button-text {
+//         top: 150px;
+//         transition: .5s;
+//     }
+// }
